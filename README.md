@@ -8,7 +8,7 @@ Before running, make sure NPM and Node are installed! You can check the versions
 
 In the project directory, you can run:
 
-### 'npm install' to download dependencies 
+### `npm install`to download dependencies 
 
 ### `npm start` to run the project
 
