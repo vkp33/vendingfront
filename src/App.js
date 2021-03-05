@@ -23,10 +23,6 @@ function App() {
     fetch(apiUrl)
     .then(res => res.json())
     .then((data) => {
-      if(data != drinks.drinks)
-      {
-        setUpdate({update: update + 1});
-      }
       setDrinks({loadingfinished: true, drinks: data});
       //console.log(data)
     })
@@ -44,8 +40,12 @@ function App() {
     fetch(apiUrl, requestOptions)
       .then(response => response.json())
       .then(exportFromJSON({ data, fileName, exportType }))
-      .then(
-            setUpdate({update: update + 1}))
+      .then( data =>
+        {
+          setTimeout(500);
+          setUpdate({update: update + 1});
+        }
+      )
   };
 
   return (
