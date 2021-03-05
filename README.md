@@ -8,7 +8,7 @@ Before running, make sure NPM and Node are installed! You can check the versions
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` within the terminal 
 
 (If you want to run the Vending API locally instead of using the hosted project, run the api first and then run this project afterwards. You would also have to change all references in the project of 'https://vending-machine-project.herokuapp.com' to 'http://localhost:3000' so it's probably easier to run this part as is.)
 
